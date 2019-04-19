@@ -1,24 +1,9 @@
-# README
+ユーザー追加
+```
+curl localhost:3010/v1/users --data '{"user": {"email": "user@example.com", "password": "mypass"}}' -v -H "Accept: application/json" -H "Content-type: application/json"
+```
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ログイン
+```
+curl localhost:3010/v1/login --data 'email=user@example.com&password=mypass'
+```
