@@ -12,6 +12,8 @@ gem 'rack-cors'
 gem 'devise'
 gem 'devise_token_auth'
 
+gem 'active_model_serializers'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
